@@ -1,0 +1,711 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Mina:400,700|Poppins:400,800");
+p {
+  color: #ED7801;
+  font: 14px "Open Sans", Tahoma; }
+
+h1 {
+  font: 36px "Open Sans Condensed", "Open Sans", Arial, Tahoma; }
+
+h2 {
+  color: #762823;
+  font: 24px "Open Sans Condensed", "Open Sans", Arial, Tahoma; }
+
+nav ul {
+  float: right;
+  margin: 30px 10px; }
+  nav ul li {
+    display: inline; }
+    nav ul li a {
+      color: #ED7801;
+      text-decoration: none;
+      padding: 10px 20px;
+      font: 18px "Open Sans Condensed", "Open Sans", Arial, Tahoma;
+      transition: all 1.0s;
+      font-weight: 700; }
+    nav ul li a:hover {
+      background: #762823;
+      transition: all 1.0s;
+      border-radius: 4px; }
+
+#msg {
+  background: url(../images/header.jpg);
+  width: 100%;
+  height: 600px; }
+
+body {
+  margin: 0; }
+
+.logo {
+  margin: 10px;
+  float: left; }
+
+.msg {
+  float: left;
+  width: 500px;
+  background: rgba(0, 0, 0, 0.3);
+  /* cor e apos a transparencia*/
+  text-align: center;
+  margin: 50px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px #000; }
+  .msg p {
+    color: #FFF;
+    font-size: 25px; }
+  .msg a {
+    text-decoration: none;
+    color: #FFF; }
+  .msg a:hover {
+    color: #ED7801; }
+
+.max {
+  float: right;
+  margin: -50px 20px; }
+
+.clear {
+  clear: both;
+  /*ignora os floats anteriores. both = ambos os lados */ }
+
+.center {
+  text-align: center;
+  display: block; }
+
+.left {
+  text-align: left;
+  display: block; }
+
+.right {
+  text-align: right; }
+
+.rotacao:hover {
+  -ms-transform: rotate(-360deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-360deg);
+  /* Safari */
+  transform: rotate(-360deg);
+  /* Standard syntax */
+  transition: all 0.8s; }
+
+.titulo {
+  text-align: center;
+  text-shadow: 1px 1px 2px #000;
+  color: #ED7801;
+  font-family: "Open Sans Condensed", "Open Sans", Arial, Tahoma;
+  font-weight: 700; }
+  .titulo:after {
+    width: 100px;
+    display: block;
+    content: "";
+    border: 5px solid #ED7801;
+    margin: 20px auto; }
+
+.maior {
+  color: #762823;
+  font-size: 45px; }
+
+.tab {
+  text-indent: 50px;
+  display: block;
+  margin-bottom: 10px; }
+
+.clearfix {
+  overflow: auto; }
+
+.box {
+  width: 90%;
+  background: rgba(245, 244, 234, 0.7);
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px #000;
+  overflow: auto; }
+  .box img {
+    border: 8px solid #fff;
+    border-radius: 100%;
+    float: right; }
+  .box .titulo {
+    display: block;
+    color: #762823;
+    text-shadow: none;
+    word-spacing: 08px;
+    margin-bottom: 25px;
+    text-transform: uppercase; }
+  .box .titulo:after {
+    width: 80px;
+    display: block;
+    content: "";
+    border: 2px solid #ED7801;
+    margin: 10px auto; }
+  .box .item {
+    border: none;
+    font: 14px "Open Sans", Tahoma; }
+
+.container {
+  width: 960px;
+  margin: auto; }
+
+.linha {
+  display: flex;
+  flex-wrap: wrap; }
+
+.item {
+  flex: 1;
+  border: 1px solid #ccc;
+  margin: 5px;
+  text-align: center;
+  transition: all 0.5s;
+  border-radius: 5px; }
+  .item:hover {
+    border-color: #762823; }
+  .item img {
+    width: 160px; }
+  .item i {
+    font-size: 50px;
+    color: #FFF;
+    margin: 20px; }
+  .item p {
+    color: #762823;
+    font-size: 16px; }
+
+.botao {
+  background: #ED7801;
+  width: 190px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.5s;
+  cursor: pointer;
+  padding: 20px;
+  margin: 5px;
+  color: #FFF; }
+
+.botao:hover {
+  background: #762823; }
+
+.botao span {
+  font-size: 20px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s; }
+
+.botao span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  color: #ED7801; }
+
+.botao:hover span {
+  padding-right: 25px;
+  color: #ED7801; }
+
+.botao:hover span:after {
+  opacity: 1;
+  right: 0; }
+
+#local {
+  background: url(../images/fogo.jpg) fixed no-repeat center;
+  padding: 40px 0;
+  float: left;
+  width: 100%;
+  background-size: cover; }
+  #local p {
+    color: #FFF;
+    font-weight: 700; }
+  #local .item:hover i {
+    transform: scale(1.5);
+    color: #FFF; }
+
+#menu {
+  border: 1px solid #762823;
+  color: #762823;
+  padding: 10px;
+  float: right;
+  margin: 20px;
+  display: none; }
+
+#promocao {
+  background: url(../images/bg.jpg) center no-repeat;
+  padding: 40px 0;
+  width: 100%; }
+  #promocao p {
+    color: #762823;
+    font-weight: 700; }
+  #promocao img {
+    margin: 10px;
+    width: 350px; }
+
+#bacon {
+  background: url(../images/bacon.jpg) bottom center;
+  padding: 40px 0;
+  float: left;
+  width: 100%;
+  height: 100px;
+  background-size: contain; }
+
+#sobre {
+  background: url(../images/aboutBK-bg.png) bottom no-repeat;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 400px; }
+  #sobre h1 {
+    padding-top: 150px; }
+  #sobre p {
+    color: #000000;
+    text-align: justify;
+    line-height: 2.2; }
+  #sobre span {
+    line-height: 1.8; }
+  #sobre span.left {
+    padding-left: 40px; }
+
+.cardapio {
+  margin-bottom: 10px; }
+  .cardapio h1 {
+    padding-top: 150px; }
+  .cardapio .produto {
+    position: relative; }
+  .cardapio .image {
+    opacity: 1;
+    display: block;
+    width: 90%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden; }
+  .cardapio .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); }
+  .cardapio .produto:hover .image {
+    opacity: 0.3; }
+  .cardapio .produto:hover .middle {
+    opacity: 1; }
+  .cardapio .produto:hover p {
+    opacity: 0; }
+  .cardapio .nome {
+    background-color: #ED7801;
+    border-radius: 8px;
+    color: #FFF;
+    font: 14px "Open Sans", Tahoma;
+    padding: 15px;
+    margin-bottom: 5px; }
+    .cardapio .nome a {
+      text-decoration: none;
+      color: #FFF; }
+  .cardapio .valor {
+    background-color: #762823;
+    border-radius: 8px;
+    color: #FFF;
+    font: 16px "Open Sans", Tahoma bold;
+    padding: 15px; }
+
+.promo {
+  width: 90px;
+  height: 20px;
+  background-color: red;
+  border-radius: 4px;
+  position: relative;
+  text-align: center;
+  font: "Open Sans", Tahoma #762823;
+  margin: 7px;
+  padding: 5px;
+  -webkit-animation-name: promocao;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-delay: 2s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite;
+  /* Safari 4.0 - 8.0 */
+  animation-name: promocao;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite; }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes promocao {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px; }
+  50% {
+    background-color: orange;
+    left: 200px;
+    top: 0px; }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px; } }
+/* Standard syntax */
+@keyframes promocao {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px; }
+  50% {
+    background-color: orange;
+    left: 200px;
+    top: 0px; }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px; } }
+#contato .topo {
+  padding-top: 150px; }
+#contato p {
+  color: #762823;
+  font-weight: 700; }
+#contato i {
+  font-size: 50px;
+  color: #762823;
+  margin: 20px; }
+#contato .item:hover i {
+  transform: scale(1.5);
+  color: #ED7801; }
+#contato .item {
+  margin-bottom: 30px; }
+
+#erro h1 {
+  padding-top: 150px; }
+#erro img {
+  width: 200px; }
+
+#formulario * {
+  box-sizing: border-box; }
+#formulario input[type=text], #formulario select, #formulario textarea, #formulario input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: "Open Sans", Tahoma;
+  color: #762823; }
+#formulario label {
+  font: 14px "Open Sans", Tahoma #762823;
+  padding: 12px 12px 12px 0;
+  display: inline-block; }
+#formulario input[type=submit] {
+  background-color: #ED7801;
+  color: #FFF;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right; }
+#formulario input[type=submit]:hover {
+  background-color: #762823; }
+#formulario .form {
+  font-family: "Open Sans", Tahoma;
+  font-size: 13px;
+  color: #762823;
+  padding: 10px; }
+#formulario .col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px; }
+#formulario .col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px; }
+#formulario .row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+#opiniao {
+  height: 200px; }
+
+#rodape {
+  background-color: #2d2d2d;
+  width: 100%;
+  padding-top: 10px; }
+  #rodape p {
+    color: #FFF;
+    font: 18px "Open Sans Condensed", "Open Sans", Arial, Tahoma bold;
+    margin: 0 0 0 40px;
+    padding: 10px; }
+  #rodape .direitos {
+    font-size: 14px; }
+  #rodape .item {
+    border: 0; }
+  #rodape .mapa, #rodape .redesocial {
+    background-color: #FFF;
+    padding: 5px; }
+  #rodape ul {
+    float: left;
+    margin: 10px 10px;
+    list-style: none; }
+    #rodape ul li {
+      text-align: left; }
+      #rodape ul li a {
+        color: #ED7801;
+        text-decoration: none;
+        padding: 5px;
+        font: 18px "Open Sans Condensed", "Open Sans", Arial, Tahoma;
+        font-weight: 700; }
+      #rodape ul li a:hover {
+        color: #762823; }
+
+.topnav {
+  overflow: hidden;
+  float: right; }
+  .topnav a {
+    color: #ED7801;
+    text-decoration: none;
+    padding: 10px 20px;
+    font: 18px "Open Sans Condensed", "Open Sans", Arial, Tahoma;
+    transition: all 1.0s;
+    font-weight: 700;
+    float: left;
+    display: block; }
+  .topnav a:hover {
+    background: #762823;
+    transition: all 1.0s;
+    border-radius: 4px; }
+
+.topnav .icon {
+  display: none; }
+
+/* regras de layout em cada tela */
+@media (min-width: 480px) and (max-width: 800px) {
+  nav ul {
+    width: 100%;
+    float: left;
+    background: #FFF; }
+    nav ul li {
+      display: block; }
+      nav ul li a {
+        padding: 10px 0;
+        font-size: 12px;
+        float: left;
+        width: 100%; }
+
+  #menu {
+    display: none; }
+
+  .container {
+    width: 400px; }
+
+  .msg {
+    width: 350px;
+    padding: 10px; }
+
+  .max {
+    display: none; }
+
+  section, main {
+    width: 100%; }
+
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0; }
+
+  #contato .linha p {
+    display: none; }
+
+  #local .linha p {
+    display: none; }
+
+  #rodape .item {
+    width: 100%; }
+
+  .promo {
+    width: 80px;
+    height: 15px;
+    padding: 2px;
+    font-size: 12px; }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes promocao {
+    0% {
+      background-color: red;
+      left: 0px;
+      top: 0px; }
+    50% {
+      background-color: orange;
+      left: 18px;
+      top: 0px; }
+    100% {
+      background-color: red;
+      left: 0px;
+      top: 0px; } }
+  /* Standard syntax */
+  @keyframes promocao {
+    0% {
+      background-color: red;
+      left: 0px;
+      top: 0px; }
+    50% {
+      background-color: orange;
+      left: 18px;
+      top: 0px; }
+    100% {
+      background-color: red;
+      left: 0px;
+      top: 0px; } }
+  .cardapio {
+    margin-bottom: 10px; }
+    .cardapio h1 {
+      padding-top: 30px; }
+    .cardapio .nome {
+      background-color: #ED7801;
+      border-radius: 8px;
+      color: #FFF;
+      font: 12px "Open Sans", Tahoma;
+      padding: 10px;
+      margin-bottom: 5px; }
+      .cardapio .nome a {
+        text-decoration: none;
+        color: #FFF; }
+    .cardapio .valor {
+      background-color: #762823;
+      border-radius: 8px;
+      color: #FFF;
+      font: 14px "Open Sans", Tahoma bold;
+      padding: 10px; }
+
+  #bacon {
+    display: none; } }
+@media (max-width: 480px) {
+  .box img {
+    display: none; }
+
+  nav ul {
+    width: 100%;
+    float: left;
+    background: #FFF; }
+    nav ul li {
+      display: block; }
+      nav ul li a {
+        padding: 10px 0;
+        font-size: 12px;
+        float: left;
+        width: 100%; }
+
+  #menu {
+    display: none; }
+
+  .container {
+    width: 400px; }
+
+  .msg {
+    width: 350px;
+    padding: 10px; }
+
+  .max {
+    display: none; }
+
+  section, main {
+    width: 100%; }
+
+  #contato .linha p {
+    display: none; }
+
+  #local .linha p {
+    display: none; }
+
+  #rodape .item {
+    width: 100%; }
+
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0; }
+
+  .promo {
+    width: 60px;
+    height: 13px;
+    padding: 2px;
+    font-size: 12px; }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes promocao {
+    0% {
+      background-color: red;
+      left: 0px;
+      top: 0px; }
+    50% {
+      background-color: orange;
+      left: 18px;
+      top: 0px; }
+    100% {
+      background-color: red;
+      left: 0px;
+      top: 0px; } }
+  /* Standard syntax */
+  @keyframes promocao {
+    0% {
+      background-color: red;
+      left: 0px;
+      top: 0px; }
+    50% {
+      background-color: orange;
+      left: 18px;
+      top: 0px; }
+    100% {
+      background-color: red;
+      left: 0px;
+      top: 0px; } }
+  #bacon {
+    display: none; }
+
+  .cardapio {
+    margin-bottom: 10px; }
+    .cardapio h1 {
+      padding-top: 30px; }
+    .cardapio .nome {
+      background-color: #ED7801;
+      border-radius: 8px;
+      color: #FFF;
+      font: 10px "Open Sans", Tahoma;
+      padding: 10px;
+      margin-bottom: 5px; }
+      .cardapio .nome a {
+        text-decoration: none;
+        color: #FFF; }
+    .cardapio .valor {
+      background-color: #762823;
+      border-radius: 8px;
+      color: #FFF;
+      font: 12px "Open Sans", Tahoma bold;
+      padding: 10px; } }
+@media screen and (max-width: 600px) {
+  .topnav {
+    float: none; }
+
+  .topnav a {
+    display: none; }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+    margin: 5px;
+    padding: 0; } }
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    float: none;
+    position: relative;
+    padding-top: 10px; }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0; }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    margin-right: 5px;
+    margin-left: -20px;
+    font-size: 11px; } }
+
+/*# sourceMappingURL=estilos.css.map */
