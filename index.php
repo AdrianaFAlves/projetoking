@@ -60,24 +60,6 @@
 							<i class="fas fa-bars"> </i>
 						</a>
 						
-						
-						<ul>
-							<li>
-								<a href="home" title="Home">Home</a>
-							</li>
-							<li>
-								<a href="sobre" title="Sobre">Sobre</a>
-							</li>				
-							<li>
-								<a href="cardapio" title="Cardapio">Cardápio</a>
-							</li>				
-							<li>
-								<a href="contato" title="Contato">Contato</a>
-							</li>	
-							<li>
-								<a href="http://www.professorburnes.com.br/downloads/kingburger/arquivos.zip" title="Download">Download</a>
-							</li>
-						</ul>-->
 				
 				</div>
 				
